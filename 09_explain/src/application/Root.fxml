@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane 
+fx:controller="application.RootController"  
+prefHeight="200.0" prefWidth="420.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <center>
+      <TableView fx:id="tableView" prefHeight="150.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="400.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAdd" mnemonicParsing="false" text="추가" />
+            <Button fx:id="btnUpdate" mnemonicParsing="false" text="수정" />
+            <Button fx:id="btnDelete" mnemonicParsing="false" text="삭제" />
+            <Button fx:id="btnBarChart" mnemonicParsing="false" text="학생별 막대그래프" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

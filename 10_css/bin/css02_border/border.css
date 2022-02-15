@@ -1,0 +1,71 @@
+VBox{
+	-fx-border-width:1;
+	-fx-border-color:black;
+	-fx-pref-width:100px;
+	-fx-pref-height:100px;
+}
+
+#vbox1{
+	-fx-border-color:red;
+	/*               상 우 하 좌 	*/
+	-fx-border-width:1 2 3 5;
+}
+
+#vbox2{
+	-fx-border-color:rgba(255,128,128,0.5);
+	/* 상하 , 좌우 */
+	-fx-border-width:1 5;
+	-fx-background-color:yellow;
+	/* 모서리 호 */
+	-fx-border-radius:50;
+	/* 배경 모서리에 호를 그림 */
+	-fx-background-radius:50;
+}
+
+#vbox3{
+	-fx-border-insets:  0, 10 , 20;
+		/*           상우하좌,상      우          하        좌       , 상하    좌우  */
+	-fx-border-color:red, green white green white, blue red;
+	-fx-border-width:1  5 , 2 , 3;
+}
+
+#vbox4{
+	-fx-border-insets: -5 , 0 , 10 ;
+	-fx-border-color: red, green, blue;
+	-fx-border-width : 1 , 1 ,1 3 3 1;
+}
+
+#vbox5{
+	-fx-border-color:blue;
+	-fx-border-width:2;
+	/* 선 스타일 지정 */	
+	/*
+		solid : 실선
+		dotted : 점선
+		dashed : 굵은 점선
+		segments : 사용자 정의형 점선
+	*/
+		/*            상            우          하            좌   */
+	-fx-border-style:solid dotted dashed segments(2,2,8,2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

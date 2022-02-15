@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.collections.*?>
+
+
+<BorderPane 
+fx:controller="menu.RootController"  
+prefHeight="200.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu text="파일">
+                  <items>
+                    	<MenuItem onAction="#handleNew" text="새로만들기">
+                    		<accelerator>
+                    			<KeyCodeCombination alt="DOWN" code="N" control="UP" shift="DOWN" meta="UP" shortcut="UP"/>
+                    		</accelerator>
+                    		<graphic>
+                    			<ImageView>
+                    				<image>
+                    					<Image url="@../icons/new.png"/>
+                    				</image>
+                    			</ImageView>
+                    		</graphic>
+                    	</MenuItem>
+                        <MenuItem onAction="#handleOpen" text="열기" >
+                        	<accelerator>
+			                	<!-- ctrl + O -->
+		                		<KeyCodeCombination 
+		                			alt="UP" 
+		                			control="DOWN" 
+		                			shift="UP" 
+		                			code="O" 
+		                			meta="UP" 
+		                			shortcut="UP" />
+		                	</accelerator>
+                    		<graphic>
+                    			<ImageView>
+                    				<image>
+                    					<Image url="@../icons/open.png"/>
+                    				</image>
+                    			</ImageView>
+                    		</graphic>
+                    	</MenuItem>
+                        <MenuItem onAction="#handleSave" text="저장" >
+                        	<accelerator>
+			                	<!-- ctrl + S -->
+		                		<KeyCodeCombination 
+		                			alt="UP" 
+		                			control="DOWN"   
+		                			shift="UP" 
+		                			code="S" 
+		                			meta="UP" 
+		                			shortcut="UP" />
+		                	</accelerator>
+                    		<graphic>
+                    			<ImageView>
+                    				<image>
+                    					<Image url="@../icons/save.png"/>
+                    				</image>
+                    			</ImageView>
+                    		</graphic>
+                    	</MenuItem>
+                        <SeparatorMenuItem />
+                        <MenuItem onAction="#handleClose" text="닫기" >
+                        	<accelerator>
+			                	<!-- ctrl + C -->
+		                		<KeyCodeCombination 
+		                			alt="UP" 
+		                			control="DOWN"   
+		                			shift="UP" 
+		                			code="C" 
+		                			meta="UP" 
+		                			shortcut="UP" />
+		                	</accelerator>
+                        </MenuItem>
+                  </items>
+                </Menu>
+                <Menu text="편집" />
+                <Menu text="이동" />
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button onAction="#handleNew" >
+                	<graphic>
+                		<ImageView preserveRatio="true">
+                			<image>
+                				<Image url="@../icons/new.png"/>
+                			</image>
+                		</ImageView> 
+                	</graphic>
+                </Button>
+                <Button onAction="#handleOpen" >
+                	<graphic>
+                		<ImageView preserveRatio="true">
+                			<image>
+                				<Image url="@../icons/open.png"/>
+                			</image>
+                		</ImageView> 
+                	</graphic>
+                </Button>
+                <Button onAction="#handleSave" >
+                	<graphic>
+                		<ImageView preserveRatio="true">
+                			<image>
+                				<Image url="@../icons/save.png"/>
+                			</image>
+                		</ImageView> 
+                	</graphic>
+                </Button>
+                <ComboBox fx:id="comboBox" prefWidth="150.0" promptText="선택" >
+                	<items>
+                		<FXCollections fx:factory="observableArrayList">
+                			<String fx:value="directory chooser" />
+                			<String fx:value="Popup Window" /> 
+                			<String fx:value="Custom Window" />
+                			<String fx:value="Custom Dialog" />               			
+                		</FXCollections>
+                	</items>
+                </ComboBox>
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,82 @@
+/* back.css */
+VBox{
+	-fx-border-color:black;
+	-fx-pref-width:100px;
+	-fx-pref-height:100px;
+}
+
+#vbox1{
+	-fx-background-color:black;
+	-fx-background-radius:20;
+	-fx-border-radius:20;
+}
+
+#vbox2{
+	-fx-background-color:rgba(255,128,128,0.5);	
+	-fx-background-color:linear-gradient(to bottom,#000000,#ff9999);
+	-fx-background-color:linear-gradient(to top,#000000,#99ff99);
+	-fx-background-color:linear-gradient(to left,#000000,#9999ff);
+	-fx-background-color:linear-gradient(to right,#000000,#9999ff);
+}
+
+#vbox3{
+	/* 반지름을 이용한 원형 그라디언트 */
+	-fx-background-color:radial-gradient(
+		center 50% 50%, radius 50%, #ffffff , #FE642E
+	);
+	-fx-background-radius:50;
+	-fx-border-radius:50;
+}
+
+#vbox4{
+	-fx-background-color:skyblue;
+	-fx-background-image:url(img/icon.gif);
+	/* repeat , no-repeat , repeat-x , repeat-y */
+	/* 
+	-fx-background-repeat:no-repeat;
+	-fx-background-repeat:repeat-x;
+	 */
+	/* -fx-background-size:50,80; */
+	-fx-background-size:33.333% , 33.333%;
+}
+
+#vbox5{
+	-fx-background-color:yellow;
+	-fx-background-image:url(img/loading.gif);
+	-fx-background-repeat:no-repeat;
+	-fx-background-size:33.333% , 33.333%;
+	/*  vertical horizontal 모두 가운데 정렬 */
+	-fx-background-position:center;
+	-fx-background-position: bottom center;
+	-fx-background-position: 70% center;
+	-fx-background-position: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

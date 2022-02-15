@@ -1,0 +1,40 @@
+/*
+	Type : 요소 이름
+	ID : id 속성의 이름			#id
+	class : styleClass의 이름 		.styleClass
+	우선순위 
+	inline > id > styleClass > type
+*/
+/*
+	Type
+*/
+Label{
+	-fx-padding:10;
+}
+/*
+ RED    GREEN   BLUE
+ 0~255  0~255  0~255
+ 16*16
+ #3 3    3 3    3 3
+*/
+.lblClass{
+	-fx-background-color:#333333;
+	-fx-text-fill:lime;
+}
+
+#lblID{
+	-fx-padding:5;
+	-fx-background-color:blue;
+	-fx-text-fill:white;
+}
+
+
+
+
+
+
+
+
+
+
+

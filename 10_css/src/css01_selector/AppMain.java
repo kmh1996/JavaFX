@@ -1,0 +1,43 @@
+package css01_selector;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class AppMain extends Application {
+
+	@Override
+	public void start(Stage primaryStage) throws Exception{
+		Parent root = FXMLLoader.load(
+			getClass().getResource("Root.fxml")
+		);
+		Scene scene = new Scene(root);
+		/*
+		scene.getStylesheets().add(
+			getClass().getResource("app.css").toString()
+		);
+		scene.getStylesheets().add(
+			getClass().getResource("state.css").toString()
+		);
+		*/
+		/*
+		scene.getStylesheets().addAll(
+			getClass().getResource("app.css").toString(),
+			getClass().getResource("state.css").toString()
+		);
+		*/
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
+
+
+
+
+

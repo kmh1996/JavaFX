@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label prefWidth="50" text="이름" />
+		<Label prefWidth="50" text="국어" GridPane.rowIndex="1" />
+		<Label prefWidth="50" text="수학" GridPane.rowIndex="2" />
+		<Label prefWidth="50" text="영어" GridPane.rowIndex="3" />
+		<TextField id="txtName" prefWidth="100" GridPane.columnIndex="1" />
+		<TextField id="txtKor" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+		<TextField id="txtMath" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+		<TextField id="txtEng" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+		<HBox alignment="CENTER" prefHeight="50" spacing="20" GridPane.columnSpan="2" GridPane.rowIndex="4">
+			<children>
+				<Button id="btnSave" text="저장" />
+				<Button id="btnCancel" text="취소" />
+			</children>
+		</HBox>
+	</children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>

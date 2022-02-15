@@ -1,0 +1,56 @@
+TextField{
+	-fx-background-color:skyblue;
+}
+
+/* TextField가 focus를 얻은 상태 */
+TextField:focused{
+	-fx-background-color:pink;
+	-fx-border-color:skyblue;
+	-fx-text-fill:white;
+	-fx-cursor:hand;
+}
+
+/*
+	해당 요소에 마우스가 올라왔을때 변경될 css
+	마우스가 해당 요소에서 사라지면 적용 해제됨
+*/
+Button:hover{
+	-fx-background-color:brown;
+	-fx-border-color:orange;
+	-fx-text-fill:white;
+	-fx-cursor:wait;
+}
+
+/* 특정 요소에 마우스에 의해서 click 또는 눌러진 상태*/
+Button:pressed{
+	-fx-border-color:purple;
+	-fx-background-color:pink;
+	-fx-text-fill:yellow;
+	-fx-cursor:move;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

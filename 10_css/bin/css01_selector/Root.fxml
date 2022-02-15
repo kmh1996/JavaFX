@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- css01_selector/Root.fxml -->
+<VBox 
+stylesheets="@app.css, @state.css"  
+xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label id="lblID" style="-fx-background-color: black; -fx-text-fill: white;" text="Label1" />
+            <Label styleClass="lblClass" style="-fx-padding:5;" text="Label2" />
+            <Label id="lblID" styleClass="lblClass" text="Label3" />
+         </children>
+      </HBox>
+      <HBox prefWidth="200.0" spacing="2.0">
+         <children>
+            <TextField />
+            <Button mnemonicParsing="false" text="확인" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
