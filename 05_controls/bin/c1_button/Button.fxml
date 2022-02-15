@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane fx:id="root" prefHeight="150.0" prefWidth="420.0" xmlns:fx="http://javafx.com/fxml/1" 
+xmlns="http://javafx.com/javafx/8" 
+fx:controller="c1_button.ButtonController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <CheckBox fx:id="chk1" text="안경" />
+                  <CheckBox fx:id="chk2" text="모자" />
+               </children>
+            </VBox>
+            <ImageView fx:id="checkImageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/geek.gif" />
+               </image>
+            </ImageView>
+            
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+               <children>
+                  <RadioButton text="BarChart" selected="true">
+                  	<toggleGroup>
+                  		<ToggleGroup fx:id="group"/>
+                  	</toggleGroup>
+                  </RadioButton>
+                  <RadioButton text="BubbleChart" toggleGroup="$group"/>
+                  <RadioButton text="AreaChart" toggleGroup="$group"/>
+               </children>
+            </VBox>
+            <ImageView fx:id="radioImageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/BarChart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnExit">
+            	<graphic>
+            		<ImageView>
+            			<image>
+            				<Image url="@../images/exit.png"/>
+            			</image>
+            		</ImageView>
+            	</graphic>
+            </Button>
+            <!-- userData = 사용자 정의형 데이터를 저장하고 사용할 수 있는 속성 -->
+            <Hyperlink fx:id="hyperLink" text="네이버" userData="http://www.naver.com"/>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
+
