@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane
+
+stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap "
+fx:controller="school.manage.ManageController"
+prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button fx:id="btnStuM" layoutX="23.0" layoutY="67.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="76.0" text="학생관리" />
+      <Button fx:id="btnCoM" layoutX="118.0" layoutY="67.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="76.0" text="강의관리" />
+      <Button fx:id="btnSoM" layoutX="211.0" layoutY="67.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="76.0" text="성적관리" />
+   </children>
+</AnchorPane>
+
+

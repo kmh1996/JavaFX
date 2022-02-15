@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="422.0" prefWidth="250.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="6.0" prefHeight="415.0" prefWidth="250.0">
+         <children>
+            <Label id="title" layoutX="20.0" text="성적정보">
+               <font>
+            <Font size="20.0" />
+         </font></Label>
+            <Label layoutX="20.0" layoutY="40.0" text="이름" />
+            <TextField fx:id="txtName" layoutX="87.0" layoutY="44.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="20.0" layoutY="103.0" text="학번" />
+            <TextField fx:id="txtId" layoutX="87.0" layoutY="74.0" />
+            <Label layoutX="20.0" layoutY="73.0" text="강의년도" />
+            <TextField fx:id="txtYear" layoutX="87.0" layoutY="104.0" />
+            <Label layoutX="20.0" layoutY="130.0" text="구분" />
+            <TextField fx:id="txtdivision" layoutX="87.0" layoutY="136.0" />
+            <Label layoutX="20.0" layoutY="165.0" text="학년" />
+            <TextField fx:id="txtGrade" layoutX="87.0" layoutY="171.0" />
+            <Label layoutX="20.0" layoutY="207.0" text="강의명" />
+            <TextField fx:id="txtLecture" layoutX="87.0" layoutY="213.0" />
+            <Label layoutX="20.0" layoutY="246.0" text="교수명" />
+            <TextField fx:id="txtProfessor" layoutX="87.0" layoutY="252.0" />
+            <Label layoutX="20.0" layoutY="282.0" text="이수학점" />
+            <TextField fx:id="txtcreditsCom" layoutX="87.0" layoutY="288.0" />
+            <Label layoutX="26.0" layoutY="319.0" text="성적" />
+            <TextField fx:id="txtGrades" layoutX="87.0" layoutY="325.0" />
+            <Button fx:id="btnAdd" layoutX="63.0" layoutY="362.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="56.0" text="추가">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="btnCancel" layoutX="161.0" layoutY="362.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="56.0" text="취소">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

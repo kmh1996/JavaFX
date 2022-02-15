@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1100.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.studentInfo.GradeController">
+   <children>
+      <TableView fx:id="gradeTable" layoutX="147.0" layoutY="76.0" prefHeight="200.0" prefWidth="841.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="tbl_sName" prefWidth="90.0" text="이름" />
+          <TableColumn fx:id="tbl_sID" prefWidth="119.0" text="학번" />
+            <TableColumn fx:id="tbl_lecYear" prefWidth="100.0" text="강의년도" />
+            <TableColumn fx:id="tbl_lecDiv" minWidth="0.0" prefWidth="102.0" text="구분" />
+            <TableColumn fx:id="tbl_sGrade" prefWidth="59.0" text="학년" />
+            <TableColumn fx:id="tbl_lecName" prefWidth="126.0" text="강의명" />
+            <TableColumn fx:id="tbl_profName" prefWidth="86.0" text="교수명" />
+            <TableColumn fx:id="tbl_lecComplete" prefWidth="76.0" text="이수학점" />
+            <TableColumn fx:id="tbl_lecGrade" prefWidth="81.0" text="성적" />
+        </columns>
+      </TableView>
+      <Label layoutX="130.0" layoutY="53.0" text="성적조회" id="title">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="717.0" layoutY="309.0" text="이수학점">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="717.0" layoutY="350.0" text="평점평균">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txt_lecComplete" editable="false" layoutX="820.0" layoutY="317.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="txt_lecGrade" editable="false" layoutX="820.0" layoutY="358.0" prefHeight="15.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

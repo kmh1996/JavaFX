@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="6.0" prefHeight="400.0" prefWidth="250.0">
+         <children>
+            <Label id="title" layoutX="25.0" text="강의추가">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></Label>
+            <Label layoutX="18.0" layoutY="48.0" text="학년" />
+            <TextField fx:id="txtGrade" layoutX="86.0" layoutY="52.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="79.0" text="수강코드" />
+            <TextField fx:id="txtCode" layoutX="86.0" layoutY="83.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="109.0" text="강의명" />
+            <TextField fx:id="txtLecture" layoutX="86.0" layoutY="113.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="138.0" text="구분" />
+            <TextField fx:id="txtDivide" layoutX="86.0" layoutY="144.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="176.0" text="교수명" />
+            <TextField fx:id="txtProfessor" layoutX="86.0" layoutY="179.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="210.0" text="인원" />
+            <TextField fx:id="txtCount" layoutX="86.0" layoutY="216.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="247.0" text="시간" />
+            <TextField fx:id="txtTime" layoutX="86.0" layoutY="254.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="285.0" text="강의실" />
+            <TextField fx:id="txtClass" layoutX="86.0" layoutY="291.0" prefHeight="22.0" prefWidth="140.0" />
+            <Label layoutX="18.0" layoutY="321.0" text="학점" />
+            <TextField fx:id="txtScore" layoutX="86.0" layoutY="326.0" prefHeight="22.0" prefWidth="140.0" />
+            <Button fx:id="btnAdd" layoutX="71.0" layoutY="355.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="추가" />
+            <Button fx:id="btnCancel" layoutX="169.0" layoutY="355.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="50.0" text="취소" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

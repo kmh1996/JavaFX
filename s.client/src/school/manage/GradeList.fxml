@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.manage.GradeListController">
+   <children>
+      <Label id="title" layoutX="280.0" layoutY="131.0" text="성적목록">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TableView fx:id="gradeTable" layoutX="280.0" layoutY="200.0" prefHeight="346.0" prefWidth="603.0">
+        <columns>
+          <TableColumn fx:id="tblName" prefWidth="61.0" text="이름" />
+            <TableColumn fx:id="tblId" prefWidth="74.0" text="학번" />
+            <TableColumn fx:id="tblYear" text="강의년도" />
+            <TableColumn fx:id="tbldivision" prefWidth="55.0" text="구분" />
+            <TableColumn fx:id="tblgrade" prefWidth="60.0" text="학년" />
+            <TableColumn fx:id="tblLecture" prefWidth="71.0" text="강의명" />
+            <TableColumn fx:id="tblProf" prefWidth="66.0" text="교수명" />
+            <TableColumn fx:id="tblCred" prefWidth="75.0" text="이수학점" />
+            <TableColumn fx:id="tblgrades" prefWidth="57.0" text="성적" />
+        </columns>
+      </TableView>
+      <Label id="title" layoutX="26.0" layoutY="131.0" text="성적정보">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="200.0" text="이름" />
+      <TextField fx:id="gradeName" layoutX="86.0" layoutY="200.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="240.0" text="학번" />
+      <TextField fx:id="gradeId" editable="false" layoutX="86.0" layoutY="240.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="280.0" text="강의년도" />
+      <TextField fx:id="gradeYear" layoutX="86.0" layoutY="280.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="320.0" text="구분" />
+      <TextField fx:id="division" layoutX="86.0" layoutY="320.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="360.0" text="학년" />
+      <TextField fx:id="gradeGrade" layoutX="86.0" layoutY="360.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="400.0" text="강의명" />
+      <TextField fx:id="gradeLecture" layoutX="86.0" layoutY="400.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="440.0" text="교수명" />
+      <TextField fx:id="gradeProfessor" layoutX="86.0" layoutY="440.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="480.0" text="이수학점" />
+      <TextField fx:id="gradecreditsCom" layoutX="86.0" layoutY="480.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="20.0" layoutY="520.0" text="성적" />
+      <TextField fx:id="gradeGrades" layoutX="86.0" layoutY="520.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="gradeAdd" layoutX="683.0" layoutY="577.0" prefHeight="51.0" prefWidth="86.0" text="추가" textFill="#1b0101">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="150.0" layoutY="577.0" prefHeight="51.0" prefWidth="86.0" text="수정">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="797.0" layoutY="577.0" prefHeight="51.0" prefWidth="86.0" text="삭제">
+         <font>
+            <Font size="20.0" />
+         </font></Button>     
+    
+   </children>
+</AnchorPane>

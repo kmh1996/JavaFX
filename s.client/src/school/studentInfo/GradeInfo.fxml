@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="443.0" layoutY="53.0" prefHeight="45.0" prefWidth="122.0" text="성적조회" textAlignment="CENTER" id="title">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TableView layoutX="149.0" layoutY="132.0" prefHeight="462.0" prefWidth="710.0" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="125.0">
+        <columns>
+          <TableColumn prefWidth="127.0" text="강의년도" />
+          <TableColumn prefWidth="73.0" text="구분" />
+            <TableColumn prefWidth="100.0" text="학년" />
+            <TableColumn prefWidth="100.0" text="강의명" />
+            <TableColumn prefWidth="100.0" text="교수명" />
+            <TableColumn prefWidth="121.0" text="이수학점" />
+            <TableColumn prefWidth="95.0" text="성적" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

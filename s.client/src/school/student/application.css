@@ -1,0 +1,72 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*
+	Type : 요소 이름
+	ID : id 속성의 이름			#id
+	class : styleClass의 이름 		.styleClass
+	우선순위 
+	inline > id > styleClass > type
+*/
+/*
+	Type
+*/
+AnchorPane{
+	
+	-fx-background-image:url(../../img/rainbow.jpg);
+	
+	
+}
+
+Label{
+	
+	-fx-padding:10;
+	-fx-font-family: 'Nanum Gothic', sans-serif;
+}
+TextField{
+	-fx-font-family: 'Nanum Gothic', sans-serif;
+}
+/*font-family: 'Nanum Gothic', sans-serif;
+ RED    GREEN   BLUE
+ 0~255  0~255  0~255
+ 16*16
+ #3 3    3 3    3 3
+*/
+
+
+
+#btnAdd {
+	-fx-font-family: 'Nanum Gothic', sans-serif;
+}
+
+#btnUpdate {
+	-fx-font-family: 'Nanum Gothic', sans-serif;
+	-fx-font-size:15;
+	-fx-padding:10;
+	
+	-fx-text-fill:black;
+}
+
+#gradeAdd{
+	-fx-font-family: 'Nanum Gothic', sans-serif;
+	-fx-font-size:15;
+	-fx-padding:10;
+	
+	-fx-text-fill:black;
+}
+#btnDelete{
+	-fx-font-family: 'Nanum Gothic', sans-serif;
+	-fx-font-size:15;
+	-fx-padding:10;
+	
+	-fx-text-fill:black;
+}
+#title, #btn{
+    -fx-font-family:'Nanum Gothic', sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+
+
+
+

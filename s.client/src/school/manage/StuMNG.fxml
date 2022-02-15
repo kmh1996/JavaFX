@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.manage.StuMNGController">
+   <children>
+      <Label id="title" layoutX="275.0" layoutY="95.0" text="학생목록" />
+      <TableView fx:id="stuTable" layoutX="275.0" layoutY="164.0" prefHeight="259.0" prefWidth="640.0">
+        <columns>
+          <TableColumn fx:id="tbl_sName" text="이름" />
+          <TableColumn fx:id="tbl_sID" text="학번" />
+           <TableColumn fx:id="tbl_sDpt" text="학과" />
+           <TableColumn fx:id="tbl_sGrade" text="학년" />
+           <TableColumn fx:id="tbl_sBirth" text="생년월일" />
+           <TableColumn fx:id="tbl_sHp" text="핸드폰" />
+           <TableColumn fx:id="tbl_sEmail" text="이메일" />
+           <TableColumn fx:id="tbl_sAddr" text="주소" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="158.0" text="이름" />
+      <Label layoutX="30.0" layoutY="188.0" text="학번" />
+      <Label layoutX="30.0" layoutY="218.0" text="학과" />
+      <Label layoutX="30.0" layoutY="248.0" text="학년" />
+      <Label layoutX="30.0" layoutY="278.0" text="생년월일" />
+      <Label id="title" layoutX="26.0" layoutY="95.0" text="학생정보" />
+      <Button fx:id="stuUpdate" layoutX="152.0" layoutY="480.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="수정" />
+      <TextField fx:id="stuName" layoutX="102.0" layoutY="164.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="stuId" disable="true" editable="false" layoutX="102.0" layoutY="194.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="stuDpt" layoutX="102.0" layoutY="224.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="stuGrade" layoutX="102.0" layoutY="254.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="stuBirth" layoutX="102.0" layoutY="284.0" prefHeight="15.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="308.0" text="핸드폰" />
+      <Label layoutX="30.0" layoutY="338.0" text="이메일" />
+      <Label layoutX="30.0" layoutY="368.0" text="주소" />
+      <TextField fx:id="stuHp" layoutX="102.0" layoutY="314.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="stuEmail" layoutX="102.0" layoutY="344.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="stuAddr" layoutX="102.0" layoutY="374.0" prefHeight="15.0" prefWidth="150.0" />
+      <Button fx:id="stuAdd" layoutX="690.0" layoutY="480.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="학생추가" />
+      <Button fx:id="stuDelete" layoutX="815.0" layoutY="480.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="학생삭제" />
+   </children>
+</AnchorPane>

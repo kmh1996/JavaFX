@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.find.FindController">
+   <children>
+      <Separator layoutX="25.0" layoutY="181.0" prefWidth="350.0" />
+      <Label id="title" alignment="CENTER" layoutX="22.0" layoutY="10.0" prefHeight="45.0" prefWidth="112.0" text="학번 찾기" />
+      <Label layoutX="56.0" layoutY="66.0" text="이름" />
+      <Label layoutX="56.0" layoutY="93.0" text="생년월일" />
+      <TextField fx:id="mName" layoutX="120.0" layoutY="70.0" />
+      <TextField fx:id="mBirth" layoutX="120.0" layoutY="100.0" />
+      <Label id="title" alignment="CENTER" layoutX="21.0" layoutY="181.0" prefHeight="52.0" prefWidth="152.0" text="비밀번호 찾기" />
+      <Button fx:id="btnNumF" layoutX="286.0" layoutY="67.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="68.0" text="조회" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="131.0" prefHeight="35.0" prefWidth="56.0" text="성별" />
+      <RadioButton layoutX="133.0" layoutY="140.0" mnemonicParsing="false" text="남" userData="1">
+      	<toggleGroup>
+          <ToggleGroup fx:id="group" />
+        </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="190.0" layoutY="140.0" mnemonicParsing="false" text="여" toggleGroup="$group" userData="2" />
+      <TextField fx:id="mNum" layoutX="121.0" layoutY="246.0" />
+      <Label layoutX="57.0" layoutY="243.0" text="학번" />
+      <Button fx:id="btnPassF" layoutX="286.0" layoutY="246.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="68.0" text="조회" />
+      <Label layoutX="57.0" layoutY="273.0" text="이메일" />
+      <TextField fx:id="mEmail" layoutX="121.0" layoutY="278.0" />
+      <Label layoutX="71.0" layoutY="324.0" text="입력하신 이메일 주소로 비밀번호를 보내드립니다." />
+   </children>
+</AnchorPane>

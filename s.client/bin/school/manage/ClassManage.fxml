@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="522.0" prefWidth="1004.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="title" layoutX="14.0" layoutY="14.0" text="강의정보" />
+      <Label layoutX="14.0" layoutY="71.0" text="학년" />
+      <Label layoutX="14.0" layoutY="109.0" text="수강코드" />
+      <Label layoutX="14.0" layoutY="152.0" text="강의명" />
+      <Label layoutX="14.0" layoutY="197.0" text="구분" />
+      <Label layoutX="14.0" layoutY="240.0" text="교수명" />
+      <Label layoutX="14.0" layoutY="281.0" text="인원" />
+      <Label layoutX="14.0" layoutY="317.0" text="시간" />
+      <Label layoutX="14.0" layoutY="353.0" text="강의실" />
+      <TextField layoutX="80.0" layoutY="71.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField layoutX="80.0" layoutY="109.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField layoutX="80.0" layoutY="152.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField layoutX="80.0" layoutY="197.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField layoutX="80.0" layoutY="240.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField layoutX="80.0" layoutY="281.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField layoutX="80.0" layoutY="317.0" prefHeight="23.0" prefWidth="163.0" />
+      <TextField layoutX="80.0" layoutY="353.0" prefHeight="23.0" prefWidth="163.0" />
+      <Button layoutX="161.0" layoutY="429.0" mnemonicParsing="false" text="수정">
+         <padding>
+            <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
+         </padding>
+      </Button>
+      <Label id="title" layoutX="301.0" layoutY="14.0" text="강의목록" />
+      <TableView layoutX="292.0" layoutY="67.0" prefHeight="304.0" prefWidth="680.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="학년" />
+            <TableColumn prefWidth="75.0" text="수강코드" />
+            <TableColumn prefWidth="75.0" text="강의명" />
+            <TableColumn prefWidth="75.0" text="구분" />
+            <TableColumn prefWidth="75.0" text="교수명" />
+            <TableColumn prefWidth="75.0" text="인원" />
+            <TableColumn prefWidth="75.0" text="시간" />
+            <TableColumn prefWidth="75.0" text="강의실" />
+            <TableColumn prefWidth="75.0" text="학점" />
+        </columns>
+      </TableView>
+      <Button layoutX="806.0" layoutY="429.0" mnemonicParsing="false" text="강의추가">
+         <padding>
+            <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+         </padding>
+      </Button>
+      <Label layoutX="17.0" layoutY="389.0" text="학점" />
+      <TextField layoutX="80.0" layoutY="389.0" prefHeight="23.0" prefWidth="163.0" />
+   </children>
+</AnchorPane>

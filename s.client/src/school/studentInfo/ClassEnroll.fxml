@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.studentInfo.ClassEnrollController">
+   <children>
+      <Label id="title" layoutX="264.0" layoutY="102.0" prefHeight="45.0" prefWidth="150.0" text="수강신청">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TableView fx:id="tableclass" layoutX="265.0" layoutY="164.0" prefHeight="200.0" prefWidth="680.0">
+        <columns>
+          <TableColumn fx:id="year" prefWidth="75.0" text="학년" />
+          <TableColumn fx:id="code" prefWidth="75.0" text="수강코드" />
+            <TableColumn fx:id="classname" prefWidth="75.0" text="강의명" />
+            <TableColumn fx:id="div" prefWidth="75.0" text="구분" />
+            <TableColumn fx:id="pname" prefWidth="75.0" text="교수명" />
+            <TableColumn fx:id="num" prefWidth="75.0" text="인원" />
+            <TableColumn fx:id="time" prefWidth="75.0" text="시간" />
+            <TableColumn fx:id="classroom" prefWidth="75.0" text="강의실" />
+            <TableColumn fx:id="hack" prefWidth="75.0" text="학점" />
+        </columns>
+      </TableView>
+      <Label id="title" layoutX="269.0" layoutY="401.0" text="수강신청내역">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <TableView fx:id="tablelist" layoutX="264.0" layoutY="446.0" prefHeight="200.0" prefWidth="680.0">
+         <columns>
+            <TableColumn fx:id="year2" prefWidth="75.0" text="학년" />
+            <TableColumn fx:id="code2" prefWidth="75.0" text="수강코드" />
+            <TableColumn fx:id="classname2" prefWidth="75.0" text="강의명" />
+            <TableColumn fx:id="div2" prefWidth="75.0" text="구분" />
+            <TableColumn fx:id="pname2" prefWidth="75.0" text="교수명" />
+            <TableColumn fx:id="num2" prefWidth="75.0" text="인원" />
+            <TableColumn fx:id="time2" prefWidth="75.0" text="시간" />
+            <TableColumn fx:id="classroom2" prefWidth="75.0" text="강의실" />
+            <TableColumn fx:id="hack2" prefWidth="75.0" text="학점" />
+         </columns>
+      </TableView>
+      <Label layoutX="42.0" layoutY="168.0" text="학번" />
+      <Label layoutX="42.0" layoutY="208.0" text="이름" />
+      <Label layoutX="42.0" layoutY="248.0" text="학과" />
+      <Label layoutX="42.0" layoutY="288.0" text="학년" />
+      <Label layoutX="30.0" layoutY="328.0" text="신청학점" />
+      <Label id="title" layoutX="98.0" layoutY="102.0" text="학생정보" />
+      <Button fx:id="btnEnroll" layoutX="747.0" layoutY="381.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="수강 신청" />
+      <TextField fx:id="txtnum" layoutX="102.0" layoutY="164.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="txtname" layoutX="102.0" layoutY="244.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="txtclass" layoutX="102.0" layoutY="204.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="txtyear" layoutX="102.0" layoutY="284.0" prefHeight="15.0" prefWidth="150.0" />
+      <TextField fx:id="txthap" layoutX="102.0" layoutY="324.0" prefHeight="15.0" prefWidth="150.0" />
+      <Button fx:id="btnCancel" layoutX="854.0" layoutY="381.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="수강 취소 " />
+   </children>
+</AnchorPane>

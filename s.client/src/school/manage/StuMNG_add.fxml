@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="title" layoutX="30.0" layoutY="24.0" text="학생추가" />
+      <Label layoutX="30.0" layoutY="79.0" text="이름" />
+      <Label layoutX="30.0" layoutY="119.0" text="학번" />
+      <Label layoutX="30.0" layoutY="159.0" text="학과" />
+      <Label layoutX="30.0" layoutY="199.0" text="학년" />
+      <Label layoutX="30.0" layoutY="239.0" text="생년월일" />
+      <Label layoutX="30.0" layoutY="279.0" text="핸드폰" />
+      <Label layoutX="30.0" layoutY="319.0" text="이메일" />
+      <Label layoutX="30.0" layoutY="359.0" text="주소" />
+      <TextField id="txtName" layoutX="120.0" layoutY="85.0" prefHeight="20.0" prefWidth="150.0" />
+      <TextField id="txtId" layoutX="120.0" layoutY="125.0" prefHeight="20.0" prefWidth="150.0" />
+      <TextField id="txtDpt" layoutX="120.0" layoutY="165.0" prefHeight="20.0" prefWidth="150.0" />
+      <TextField id="txtGrade" layoutX="120.0" layoutY="205.0" prefHeight="20.0" prefWidth="150.0" />
+      <TextField id="txtBirth" layoutX="120.0" layoutY="245.0" prefHeight="20.0" prefWidth="150.0" />
+      <TextField id="txtHp" layoutX="120.0" layoutY="285.0" prefHeight="20.0" prefWidth="150.0" />
+      <TextField id="txtEmail" layoutX="120.0" layoutY="325.0" prefHeight="20.0" prefWidth="150.0" />
+      <TextField id="txtAddr" layoutX="120.0" layoutY="365.0" prefHeight="20.0" prefWidth="150.0" />
+      <Button fx:id="btnAdd" layoutX="52.0" layoutY="425.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="80.0" text="추가" />
+      <Button fx:id="btnCancel" layoutX="161.0" layoutY="425.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="80.0" text="취소" />
+   </children>
+</AnchorPane>

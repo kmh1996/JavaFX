@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane
+stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap" 
+prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button fx:id="btnInfo" layoutX="23.0" layoutY="67.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="76.0" text="내정보" />
+      <Button fx:id="btnEnroll" layoutX="118.0" layoutY="67.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="76.0" text="수강신청" />
+      <Button fx:id="btnScoreInfo" layoutX="211.0" layoutY="67.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="76.0" text="성적조회" />
+   </children>
+</AnchorPane>

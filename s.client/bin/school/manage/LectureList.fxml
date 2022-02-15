@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@application.css, https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;display=swap " xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="school.manage.LectureListController">
+   <children>
+      <Label id="title" layoutX="300.0" layoutY="102.0" text="강의목록">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TableView fx:id="lectureTable" layoutX="300.0" layoutY="170.0" prefHeight="320.0" prefWidth="644.0">
+        <columns>
+          <TableColumn fx:id="tblGrade" prefWidth="58.0" text="학년" />
+          <TableColumn fx:id="tblCode" prefWidth="78.0" text="수강코드" />
+            <TableColumn fx:id="tblLecture" prefWidth="74.0" text="강의명" />
+            <TableColumn fx:id="tblDivide" prefWidth="61.0" text="구분" />
+            <TableColumn fx:id="tblProfessor" prefWidth="82.0" text="교수명" />
+            <TableColumn fx:id="tblCont" prefWidth="64.0" text="인원" />
+            <TableColumn fx:id="tblTime" prefWidth="76.0" text="시간" />
+            <TableColumn fx:id="tblClass" prefWidth="70.0" text="강의실" />
+            <TableColumn fx:id="tblScore" text="학점" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="160.0" text="학년" />
+      <Label layoutX="30.0" layoutY="198.0" text="수강코드" />
+      <Label layoutX="30.0" layoutY="235.0" text="강의명" />
+      <Label layoutX="30.0" layoutY="268.0" text="구분" />
+      <Label layoutX="30.0" layoutY="306.0" text="교수명" />
+      <Label id="title" layoutX="36.0" layoutY="102.0" text="강의정보">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="lectureAdd" layoutX="751.0" layoutY="520.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="89.0" text="강의추가">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TextField fx:id="lecGrade" layoutX="102.0" layoutY="160.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="lecCode" editable="false" layoutX="102.0" layoutY="198.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="lecture" layoutX="102.0" layoutY="235.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="divide" layoutX="102.0" layoutY="268.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="lecProfessor" layoutX="103.0" layoutY="306.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="343.0" text="인원" />
+      <TextField fx:id="lecCount" layoutX="102.0" layoutY="343.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="382.0" text="시간" />
+      <TextField fx:id="lecTime" layoutX="102.0" layoutY="382.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="418.0" text="강의실" />
+      <TextField fx:id="lecClass" layoutX="101.0" layoutY="418.0" prefHeight="25.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="462.0" text="학점" />
+      <TextField fx:id="lecScore" layoutX="102.0" layoutY="462.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="btnUpdate" layoutX="189.0" layoutY="523.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="64.0" text="수정" />
+      <Button fx:id="btnDelete" layoutX="862.0" layoutY="520.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="82.0" text="삭제" />
+   </children>
+</AnchorPane>
