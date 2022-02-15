@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- e02_fxml_event/Root.fxml -->
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox 
+alignment="CENTER" 
+prefHeight="50.0" 
+prefWidth="200.0" 
+spacing="20.0" 
+xmlns:fx="http://javafx.com/fxml/1" 
+xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button fx:id="btn1" text="btn1" />
+      <Button fx:id="btn2" text="btn2" />
+      <Button fx:id="btn3" text="btn3" />
+   </children>
+</HBox>
