@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Margin.fxml -->
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Button">
+         <HBox.margin>
+            <Insets topRightBottomLeft="30.0" />
+         </HBox.margin>
+      </Button>
+   </children>
+</HBox>
+
+
+
+
+
+
+
+

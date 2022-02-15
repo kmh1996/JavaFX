@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<!-- <?import javafx.scene.control.Button?> -->
+<?import javafx.geometry.Insets?>
+
+
+<!-- 
+HBox Container 선언 
+HBox root = new HBox();
+-->
+<HBox xmlns:fx="http://javafx.com/fxml/1">
+	<padding><!-- 안쪽여백 -->
+		<Insets top="10" right="10" bottom="10" left="10" />
+	</padding>
+	<spacing>20</spacing>
+	<!-- 자식 컨트롤러 추가 -->
+	<children>
+		<!-- TextField 선언 -->
+		<TextField alignment="CENTER">
+			<!-- TextField의 폭 설정 -->
+			<prefWidth>200</prefWidth>
+		</TextField>
+		<Button alignment="CENTER">
+			<text>확인</text>
+		</Button>
+	</children>
+</HBox>
+
+
+
+
+
+
+
+
+
+
+
+

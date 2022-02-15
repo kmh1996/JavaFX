@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml/1">
+<!-- preserveRatio="true" 그림의 비율에 맞게 높이를 설정 가로/세로비율유지-->
+	<children>
+		<ImageView fitWidth="200" fitHeight="150" preserveRatio="true">
+			<image>
+				<Image url="@image/javafx.jpg"/>
+			</image>
+		</ImageView>
+		<HBox alignment="CENTER" spacing="20">
+			<children>
+				<Button text="이전"/>
+				<Button text="다음" HBox.hgrow="ALWAYS">
+					<maxWidth><Double fx:constant="MAX_VALUE"/></maxWidth>
+				</Button>
+			</children>
+		</HBox>	
+	</children>
+	<padding>
+		<Insets topRightBottomLeft="10"/>
+	</padding>
+</VBox>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
