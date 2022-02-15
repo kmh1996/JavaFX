@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane 
+fx:controller="application.SubController"  
+fx:id="subWrap" prefHeight="500.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <top>
+      <BorderPane style="-fx-background-color:#eaeaea;" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="서브화면" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <Button fx:id="btnPrev" mnemonicParsing="false" text="Prev" BorderPane.alignment="CENTER" />
+         </left>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </BorderPane>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

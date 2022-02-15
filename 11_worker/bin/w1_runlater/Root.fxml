@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane 
+stylesheets="@application.css" 
+fx:controller="w1_runlater.RootController"  
+prefHeight="100.0" prefWidth="150.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label fx:id="lblTime" layoutX="48.0" layoutY="24.0" text="00:00:00" />
+      <Button fx:id="btnStart" layoutX="21.0" layoutY="63.0" text="_Start" />
+      <Button fx:id="btnStop" layoutX="81.0" layoutY="63.0" text="S_TOP" />
+   </children>
+</AnchorPane>
+
+
+
