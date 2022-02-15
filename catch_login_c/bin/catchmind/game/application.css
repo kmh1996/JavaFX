@@ -1,0 +1,52 @@
+
+#bgimg{
+	-fx-background-image:url(img/gamebackground.png);
+}
+#btnClose{
+	-fx-background-image:url(img/exitBtnIcon.png);
+}
+#btnClear{
+	-fx-background-image:url(img/clearBtnIcon.png); 
+}
+#btnBlack{
+	-fx-background-image:url(img/blackBtnIcon.png); 
+}
+#btnRed{
+	-fx-background-image:url(img/redBtnIcon.png);
+}
+#btnBlue{
+	-fx-background-image:url(img/blueBtnIcon.png);
+}
+#btnGreen{
+	-fx-background-image:url(img/greenBtnIcon.png);
+}
+#btnyellow{
+	-fx-background-image:url(img/yellowBtnIcon.png);
+}
+#btnEraser{
+	-fx-background-image:url(img/eraserBtnIcon.png);
+}
+#btnStart{
+	-fx-background-image:url(img/startBtnIcon.jpg);
+}
+#post{
+	-fx-background-image:url(img/post.png);
+}
+#userLi{
+	-fx-background-image:url(img/userList.png);
+}
+#btnStop{
+	-fx-background-image:url(img/stopBtnIcon.png);
+}
+#chat{
+	-fx-background-image:url(img/chat.png);
+}
+#Pause{
+	-fx-background-image:url(img/Pause.png);
+}
+#Stop{
+	-fx-background-image:url(img/Stop.png);
+}
+#Play{
+	-fx-background-image:url(img/Play.png);
+}
